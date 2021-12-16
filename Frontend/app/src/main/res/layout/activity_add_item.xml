@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add_bg"
+    tools:context=".Activity.AddItemActivity"
+    >
+
+    <TextView
+        android:id="@+id/add_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#957d3c07"
+        android:gravity="center"
+        android:text="Add Item to Restaurant"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/add_user_namelb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_item_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#60ffffff"
+        android:padding="10dp"
+        android:text="Name:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/add_user_passwordlb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_user_namelb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#60ffffff"
+        android:padding="10dp"
+        android:text="Quantity:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/add_user_realnamelb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_user_passwordlb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#60ffffff"
+        android:padding="10dp"
+        android:text="Price:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/add_user_emaillb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_user_realnamelb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#60ffffff"
+        android:padding="10dp"
+        android:text="Image:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/add_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_item_title"
+        android:layout_alignParentEnd="@+id/add_user_namelb"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/add_user_namelb"
+        android:background="#90ffffff"
+        android:drawablePadding="10dp"
+        android:hint="Enter Item Name"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#95000000" />
+
+    <EditText
+        android:id="@+id/add_item_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_item_title"
+        android:layout_alignParentEnd="@+id/add_user_namelb"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/add_user_namelb"
+        android:background="#90ffffff"
+        android:drawablePadding="10dp"
+        android:hint="Enter Item Quantity"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#95000000" />
+
+    <EditText
+        android:id="@+id/add_item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_item_title"
+        android:layout_alignParentEnd="@+id/add_user_namelb"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/add_user_namelb"
+        android:background="#90ffffff"
+        android:drawablePadding="10dp"
+        android:hint="Enter Item Price"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#95000000" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_item_image"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_item_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="254dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#60ffffff"
+        android:padding="10dp"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/store_owner_viewall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_item_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#f7ac28"
+        android:onClick="submit"
+        android:padding="12dp"
+        android:text="Submmit"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</RelativeLayout>

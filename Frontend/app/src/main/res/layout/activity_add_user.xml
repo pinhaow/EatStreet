@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Activity.AddUserActivity"
+    >
+
+    <TextView
+        android:id="@+id/add_user_title"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Create a New Account"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/add_user_namelb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_user_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#60ffffff"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="Name:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/add_user_passwordlb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_user_namelb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#60ffffff"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="Password:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/add_user_realnamelb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_user_passwordlb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#60ffffff"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="RealName:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/add_user_emaillb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_user_realnamelb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#60ffffff"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="Email:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/add_user_addresslb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_user_emaillb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#60ffffff"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="Address:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/add_user_mobilephonelb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_user_addresslb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#60ffffff"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="Phone:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/add_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_user_title"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/add_user_namelb"
+        android:background="#90ffffff"
+        android:hint="Enter User Name"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#95000000" />
+
+    <EditText
+        android:id="@+id/add_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_user_name"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/add_user_passwordlb"
+        android:background="#90ffffff"
+        android:hint="Enter Your Password"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#95000000" />
+
+    <EditText
+        android:id="@+id/add_user_realname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_user_password"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/add_user_realnamelb"
+        android:background="#90ffffff"
+        android:hint="Enter Realname"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#95000000" />
+
+    <EditText
+        android:id="@+id/add_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_user_realname"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/add_user_emaillb"
+        android:background="#90ffffff"
+        android:hint="Enter Email Address"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#95000000" />
+
+    <EditText
+        android:id="@+id/add_user_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_user_email"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/add_user_addresslb"
+        android:background="#90ffffff"
+        android:hint="Enter Address"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#95000000" />
+
+    <EditText
+        android:id="@+id/add_user_mobilephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_user_address"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/add_user_mobilephonelb"
+        android:background="#90ffffff"
+        android:hint="Enter Mobile Phone #"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#95000000" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/store_owner_viewall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_user_mobilephonelb"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#60ffffff"
+        android:onClick="submit"
+        android:padding="12dp"
+        android:text="Submmit"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</RelativeLayout>
